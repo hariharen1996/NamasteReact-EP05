@@ -1,0 +1,84 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #000;
+}
+
+.logo {
+  width: 100px;
+}
+
+.nav-items > ul {
+  display: flex;
+}
+
+.nav-items > ul > li {
+  font-size: 15px;
+  padding: 10px;
+  list-style: none;
+}
+.nav-items > ul > li:hover {
+  color: brown;
+  cursor: pointer;
+}
+
+.filter-container {
+  margin: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.search-input {
+  width: 50%;
+}
+
+.filter-btn {
+  cursor: pointer;
+}
+
+.restaurent-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+
+.card {
+  padding: 5px;
+  width: 200px;
+  min-height: 200px;
+  background-color: #f1f1f1;
+  margin: 10px;
+  text-align: start;
+  cursor: pointer;
+}
+
+.card:hover {
+  border: 1px solid #000;
+}
+
+.res-logo {
+  width: 200px;
+  height: 150px;
+}
+
+@media screen and (max-width: 768px) {
+  .logo {
+    width: 70px;
+  }
+  .nav-items > ul > li {
+    font-size: 12px;
+  }
+  .input {
+    width: 100%;
+  }
+  .filter-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .search-input {
+    width: 100%;
+  }
+}

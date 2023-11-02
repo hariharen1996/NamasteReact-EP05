@@ -1,0 +1,51 @@
+Assignment 05 - Let's get Hooked!
+
+Theory
+
+1. What is difference between Named Export, Default Export and * as export?
+When you export an component using default, while importing no need to mention curly braces. There can
+be only one default export in an file.
+When you have used the named export, while importing you should mention curly braces. There can be multiple named export in an file.
+The * export is normally used to import whole file as an component. If there are more than on component in an file, we can use * import to import all the component in a file or module
+
+Default Export
+export default ComponentName 
+import ComponentName from path 
+
+Named Export 
+export const ComponentName1
+export const ComponentName2
+import { ComponentName1 } from path 
+import { ComponentName2 } from path 
+
+* import 
+In a module there are 3 components named as ComponentName1,ComponentName2,ComponentName3.
+import * as ComponentNames from path
+
+<ComponentNames.ComponentName1 />
+<ComponentNames.ComponentName2 />
+<ComponentNames.ComponentName3 />
+
+2. What is important of config.js file?
+The config.js file in react is used to store the api data or api url, cdn links, image links and it gives an good folder structure to maintain the data 
+
+3. what are react hooks?
+The React Hooks are normal javascript function given by react and it is an utility functions. There are two important react hooks 
+  => useState()
+  => useEffect()
+
+4. Why do we ned a useState hook?
+The useState hook is an super-powerful hook, which is used to update an state in react applications. It maintains the state of an application. It consists of two parts, local state variable, which is an normal javascript variable and another variable is an javascript function, which is used to update the state.
+  => import { useState } from 'react'
+  => const [state,setState] = useState(0) => Here we will be providing default value
+
+Coding
+
+1. Clean up your code
+2. Create a folder structure for your app 
+3. Make different files for each component 
+4. Create a config.js file 
+5. use all type of import and export 
+6. create a search box in your app 
+7. use useState and bind it to the input box 
+8. Try to make your search box work
